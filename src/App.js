@@ -1,6 +1,5 @@
 import React from "react";
-import image from "../public/IMG_3041.JPG";
-
+import image from "../src/IMG_3041.JPG";
 import Countdown from "../src/components/countdown";
 import "./App.css";
 
