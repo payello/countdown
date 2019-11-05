@@ -1,4 +1,5 @@
-import React, { PropTypes, Component } from "react";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Countdown extends Component {
   constructor(props) {
@@ -65,14 +66,6 @@ class Countdown extends Component {
     clearInterval(this.interval);
   }
 
-  addLeadingZeros(value) {
-    value = String(value);
-    while (value.length < 2) {
-      value = "0" + value;
-    }
-    return value;
-  }
-
   render() {
     const countDown = this.state;
     return (
@@ -90,12 +83,12 @@ class Countdown extends Component {
   }
 }
 
-// Countdown.propTypes = {
-//   date: PropTypes.string.isRequired
-// };
+Countdown.propTypes = {
+  date: PropTypes.string.isRequired
+};
 
-// Countdown.defaultProps = {
-//   date: new Date()
-// };
+Countdown.defaultProps = {
+  date: new Date()
+};
 
 export default Countdown;
