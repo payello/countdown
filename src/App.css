@@ -29,6 +29,6 @@ footer {
 
 img {
   width: 50%;
-  min-width: 400px;
+  max-width: 300px;
   height: auto;
 }
