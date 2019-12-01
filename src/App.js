@@ -13,10 +13,12 @@ function App() {
       <header className="App-header">
         <h3>Percy's birthday</h3>
         <img src={ percy } className="App-logo" alt="logo" />
+        <p>July 30</p>
         <Countdown date="2020-07-29T08:00:00.889Z" />
 
         <h3>Archie's birthday</h3>
         <img src={ archie } className="App-logo" alt="logo" />
+        <p>November 17</p>
         <Countdown date="2020-11-17T08:00:00.889Z" />
       </header>
       {/* <Darkmode /m > */}
