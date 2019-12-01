@@ -1,4 +1,4 @@
 [build]
-base = "count-down"
-publish="count-down/build"
+base = "count-down/"
+publish="count-down/build/"
 command = "yarn build"
