@@ -43,7 +43,7 @@ function App() {
         <img src={ tom } className="App-logo" alt="logo" />
         <p>December 06</p>
         Countdown until Tom's birthday - <Countdown date="2020-06-03T08:00:00.889Z" /> 
-        Tom is <Age date="2015-06-03T08:00:00.889Z"/>
+        Tom is <Age date="2013-06-03T08:00:00.889Z"/>
 
       </header>
       {/* <Darkmode /m > */}
