@@ -6,6 +6,7 @@ import Darkmode from "../src/components/darkMode";
 import "./App.css";
 import percy from "../src/images/percy.jpg"
 import archie from "../src/images/archie.jpg"
+import Age from "../src/components/age"
 
 function App() {
   return (
@@ -14,12 +15,14 @@ function App() {
         <h3>Percy's birthday</h3>
         <img src={ percy } className="App-logo" alt="logo" />
         <p>July 30</p>
-        <Countdown date="2020-07-29T08:00:00.889Z" />
+        Countdown until Percy's birthday - <Countdown date="2020-07-29T08:00:00.889Z" />
+        Percy is <Age date="2017-07-29T08:00:00.889Z"/>
 
         <h3>Archie's birthday</h3>
         <img src={ archie } className="App-logo" alt="logo" />
         <p>November 17</p>
-        <Countdown date="2020-11-17T08:00:00.889Z" />
+        Countdown until Archie's birthday - <Countdown date="2020-11-17T08:00:00.889Z" /> 
+        Archie is <Age date="2018-11-17T08:00:00.889Z"/>
       </header>
       {/* <Darkmode /m > */}
       <Footer />
