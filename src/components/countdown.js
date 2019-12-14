@@ -23,8 +23,12 @@ class Countdown extends Component {
   }
 
   calculateCountdown(endDate) {
-    console.log(endDate)
-    let diff = (Date.parse(new Date(endDate)) - Date.parse(new Date())) / 1000;
+    endDate = endDate.split("-");
+    let newDate = endDate[1]+"/"+endDate[0]+"/"+endDate[2];
+
+    new Date(newDate).getTime()
+
+    let diff = (new Date(newDate).getTime() / 1000) - Date.parse(new Date()) / 1000;
 
     if (diff <= 0) return false;
 

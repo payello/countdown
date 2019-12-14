@@ -29,7 +29,6 @@ class Age extends Component {
       age.years = Math.floor(diff / (365.25 * 86400));
       diff -= age.years * 365.25 * 86400;
     }
-    console.log(age);
     return age;
   }
 

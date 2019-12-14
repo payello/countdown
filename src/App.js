@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../src/IMG_3041.JPG";
 import Countdown from "../src/components/countdown";
 import Footer from "../src/components/footer";
 import "./App.css";
@@ -54,25 +53,25 @@ function App() {
     let nextYear = today.getFullYear() + 1;
   
     if ( birthMonth < thisMonth ) {
-      return nextYear + '-' + birthMonth + '-' + day;
+      return day + '-' + birthMonth + '-' + nextYear;
     }
 
     if (birthMonth === thisMonth) {
       if (thisDate < day) {
-        return thisYear + '-' + birthMonth + '-' + day;
+        return day + '-' + birthMonth + '-' + thisYear;
       }
 
       if (thisDate === day) {
-        return thisYear + '-' + birthMonth + '-' + day;
+        return day + '-' + birthMonth + '-' + thisYear;
       }
 
       if (thisDate > day) {
-        return nextYear + '-' + birthMonth + '-' + day;
+        return day + '-' + birthMonth + '-' + nextYear;
       }
     }
 
     if (birthMonth > thisMonth) {
-      return nextYear + '-' + birthMonth + '-' + birthDate;
+      return day + '-' + birthMonth + '-' + nextYear;
     }
   }
   
@@ -81,13 +80,13 @@ function App() {
       <header className="App-header">
         <h1>How long until I am...?</h1>
       {Object.keys(data).map((item, index) => 
-      <>
+      <div key={ data[item][0].name }>
         <h3>{ data[item][0].name }</h3>
         <img src={ data[item][0].img } alt={data[item][0].name}/>
         <p>Birthday is on <strong>{ formatDate(data[item][0].birthday) }</strong></p>
         {`Countdown until ${data[item][0].name}'s birthday - `}<Countdown date={nextBirthday(data[item][0].date)} />
         {`${data[item][0].name} is `}<Age date={data[item][0].birthday} />
-      </>
+      </div>
       )}
       </header>
     </div>
