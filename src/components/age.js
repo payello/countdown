@@ -37,7 +37,7 @@ class Age extends Component {
     const age = this.state;
     return (
       <div className="countDown">
-      <strong>{age.years} </strong>   
+      <strong>{age.years} </strong>{age.years > 1 ? `years old` : `year old`}
       </div>
     )
   }

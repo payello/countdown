@@ -2,7 +2,6 @@ import React from "react";
 import image from "../src/IMG_3041.JPG";
 import Countdown from "../src/components/countdown";
 import Footer from "../src/components/footer";
-import Darkmode from "../src/components/darkMode";
 import "./App.css";
 import percy from "../src/images/percy.jpg"
 import archie from "../src/images/archie.jpg"
@@ -87,6 +86,7 @@ function App() {
         <img src={ data[item][0].img } alt={data[item][0].name}/>
         <p>Birthday is on <strong>{ formatDate(data[item][0].birthday) }</strong></p>
         {`Countdown until ${data[item][0].name}'s birthday - `}<Countdown date={nextBirthday(data[item][0].date)} />
+        {`${data[item][0].name} is `}<Age date={data[item][0].birthday} />
       </>
       )}
       </header>
