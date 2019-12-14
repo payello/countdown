@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88d3a2bd0c1328738cab3c5e43112b9a",
+    "revision": "43d70e79284aa622ae64df2f00d43fe9",
     "url": "/countdown/index.html"
   },
   {
-    "revision": "4a5825e0ccefd57a9764",
+    "revision": "db1e904a496a4cbf881e",
     "url": "/countdown/static/css/main.640f07c3.chunk.css"
   },
   {
@@ -12,16 +12,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/countdown/static/js/2.5c2ff1b8.chunk.js"
   },
   {
-    "revision": "4a5825e0ccefd57a9764",
-    "url": "/countdown/static/js/main.8d9b822e.chunk.js"
+    "revision": "db1e904a496a4cbf881e",
+    "url": "/countdown/static/js/main.764266a2.chunk.js"
   },
   {
     "revision": "22176611fba5a32e57c7",
     "url": "/countdown/static/js/runtime-main.ec83baf2.js"
-  },
-  {
-    "revision": "ee299f7de17482d8721e4dc5ddd4b3dd",
-    "url": "/countdown/static/media/IMG_3041.ee299f7d.JPG"
   },
   {
     "revision": "f86a70417fbff464d7c2ffdaeb145b3a",
